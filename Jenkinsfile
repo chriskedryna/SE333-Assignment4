@@ -8,11 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Replace 'make' with your actual build command (e.g., 'npm install', 'mvn clean package')
-                
-                git 'https://github.com/chriskedryna/SE333-Assignment4.git'
-                sh 'mvn -version'
-                sh 'java --version'
+                // Replace 'make' with your actual build command (e.g., 'npm install', 'mvn clean package'
                 sh 'mvn clean package'
             }
         }
