@@ -2,6 +2,7 @@ pipeline {
   agent any // The agent directive allocates an executor for the entire Pipeline
 
   tools {
+    jdk "jdk21"
     maven "M3"
   }
 
